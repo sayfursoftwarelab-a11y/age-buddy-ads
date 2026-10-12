@@ -990,7 +990,7 @@ document.querySelectorAll('.details-toggle').forEach(button=>{
    window.addEventListener('scroll',()=>{if(window.scrollY>180)hideCue()},{passive:true});
  }
  // Header wordmark collapses smoothly while keeping the full developer mark visible.
- window.setTimeout(()=>document.querySelector('.nav')?.classList.add('brand-logo-only'),3500);
+ // Keep the developer name visible permanently; do not auto-collapse the header wordmark.
 })();
 // V17: Musiko Coming Soon is a local view; browser/device Back returns to the previous page position.
 (function(){
